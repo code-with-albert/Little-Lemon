@@ -1,0 +1,89 @@
+:root {
+  --primary-dark: rgb(73, 94, 87);
+  --primary-yellow: rgb(244, 206, 20);
+  --secondary-orange: rgb(238, 153, 114);
+  --secondary-light-brown: rgb(251, 218, 187);
+  --highlight-white: rgb(237, 239, 238);
+  --highlight-black: rgb(51, 51, 51);
+}
+#card-review-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--highlight-white);
+  gap: 20px;
+  padding: 20px 250px 20px 250px;
+}
+#card-review-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 25px;
+}
+#card-review-title {
+  font-family: "Karla";
+  font: 45px;
+  color: var(--highlight-black);
+}
+#card-review-selection {
+  overflow-x: auto;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+#card-review-item {
+  width: 260px;
+  height: 520px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 10px;
+  border: solid 2px var(--primary-dark);
+  background-color: white;
+  border-radius: 10px;
+}
+
+#card-review-img {
+  width: auto;
+  height: 150px;
+  place-items: center;
+  object-fit: contain;
+}
+
+#card-review-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+}
+
+#card-review-text > * {
+  text-align: start;
+  display: flex;
+  color: var(--highlight-black);
+}
+
+#card-review-username {
+  font-size: 40px;
+  font-family: "Markazi Text";
+  font-weight: bold;
+}
+
+#card-review-comment {
+  font-size: 25px;
+  font-family: "khula";
+  line-height: 25px;
+  height: 220px;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  #card-review-container {
+    justify-content: space-around;
+    padding: 20px 30px 20px 30px;
+  }
+}

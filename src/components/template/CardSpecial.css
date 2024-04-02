@@ -1,0 +1,115 @@
+:root {
+  --primary-dark: rgb(73, 94, 87);
+  --primary-yellow: rgb(244, 206, 20);
+  --secondary-orange: rgb(238, 153, 114);
+  --secondary-light-brown: rgb(251, 218, 187);
+  --highlight-white: rgb(237, 239, 238);
+  --highlight-black: rgb(51, 51, 51);
+}
+#card-special-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px 250px 0px 250px;
+}
+#card-special-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  line-height: 25px;
+}
+#card-special-title {
+  font-family: "Karla";
+  font: 45px;
+  color: var(--highlight-black);
+}
+#card-special-button {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--highlight-black);
+  background-color: var(--primary-yellow);
+  font-family: "Trebuchet MS";
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid 2px var(--highlight-black);
+}
+#card-special-button:hover {
+  border: solid 2px var(--highlight-white);
+}
+#card-special-button:active {
+  border: solid 2px var(--highlight-white);
+  background-color: var(--primary-dark);
+  color: var(--primary-yellow);
+}
+#card-special-selection {
+  overflow-x: auto;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+#card-special-item {
+  background-color: var(--highlight-white);
+  width: 260px;
+  height: 520px;
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+#card-special-img {
+  width: 100%;
+  height: 150px;
+  place-items: center;
+  object-fit: cover;
+}
+
+#card-special-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+}
+
+#card-special-text > * {
+  text-align: start;
+  display: flex;
+  color: var(--highlight-black);
+}
+
+#card-special-heading {
+  font-size: 40px;
+  font-family: "Markazi Text";
+  font-weight: bold;
+}
+
+#card-special-description {
+  font-size: 25px;
+  font-family: "khula";
+  line-height: 25px;
+  height: 220px;
+}
+
+#card-special-price {
+  font-size: 35px;
+  font-family: "Markazi Text";
+  font-weight: bold;
+}
+#card-special-comment {
+  font-size: 25px;
+  font-family: "khula";
+  line-height: 25px;
+}
+
+@media (max-width: 1000px) {
+  #card-special-container {
+    justify-content: space-around;
+    padding: 0px 30px 0px 30px;
+  }
+}

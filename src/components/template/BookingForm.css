@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primary-dark: rgb(73, 94, 87);
+  --primary-yellow: rgb(244, 206, 20);
+  --secondary-orange: rgb(238, 153, 114);
+  --secondary-light-brown: rgb(251, 218, 187);
+  --highlight-white: rgb(237, 239, 238);
+  --highlight-black: rgb(51, 51, 51);
+}
+#booking-container {
+  width: 100%;
+  height: 600px;
+}
+#booking-form {
+  width: 400px;
+  background-color: var(--primary-dark);
+  padding: 20px;
+  box-shadow: 10px 10px 5px var(--highlight-black);
+}
+#booking-title {
+  font-family: "Markazi Text";
+  font-size: 50px;
+  line-height: 35px;
+  color: var(--primary-yellow);
+}
+#booking-form label {
+  font-weight: bold;
+  color: var(--highlight-white);
+  text-align: end;
+}
+#booking-form .button {
+  font-weight: bold;
+  height: 50px;
+  width: 80%;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: var(--primary-yellow);
+  color: var(--highlight-black);
+}
+#booking-form .button:disabled {
+  background-color: var(--secondary-light-brown);
+  color: var(--secondary-orange);
+}
+
+.flex-row-end {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+#booking-form .inputs {
+  width: 180px;
+  height: 30px;
+  padding: 0px 5px 0px 5px;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}

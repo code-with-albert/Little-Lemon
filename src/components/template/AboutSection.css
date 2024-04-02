@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primary-dark: rgb(73, 94, 87);
+  --primary-yellow: rgb(244, 206, 20);
+  --secondary-orange: rgb(238, 153, 114);
+  --secondary-light-brown: rgb(251, 218, 187);
+  --highlight-white: rgb(237, 239, 238);
+  --highlight-black: rgb(51, 51, 51);
+}
+
+#about-section-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+#about-section-banner {
+  padding: 20px 250px 20px 250px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#about-section-card {
+  width: 500px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  flex-shrink: 0;
+}
+#about-section-image {
+  display: grid;
+  grid-template-columns: 20px repeat(4, 35px) 10px repeat(4, 35px) 20px;
+  grid-template-rows: 20px repeat(4, 35px) 10px repeat(4, 35px) 20px;
+}
+#about-section-image > * {
+  object-fit: fill;
+}
+
+#about-section-image > #about-section-image {
+  grid-row: 2 / span 8;
+  grid-column: 2 / span 8;
+  height: 100%;
+  width: 100%;
+}
+
+#about-section-image-style-one {
+  grid-row: 3 / span 9;
+  grid-column: 1 / span 9;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-orange);
+}
+#about-section-image-style-two {
+  grid-row: 1 / span 9;
+  grid-column: 3 / span 8;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-dark);
+}
+#about-section-image-style-three {
+  grid-row: 3 / span 6;
+  grid-column: 4 / span 8;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-yellow);
+}
+#about-section-card > * {
+  text-align: start;
+}
+#about-section-heading {
+  color: var(--primary-dark);
+  font-family: "Markazi text";
+  font-size: 64px;
+  line-height: 30px;
+}
+
+#about-section-subheading {
+  color: var(--highlight-black);
+  font-family: "Markazi text";
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#about-section-description {
+  color: var(--highlight-black);
+  font-family: "khula";
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  #about-section-container {
+    height: auto;
+  }
+
+  #about-section-card {
+    width: 100%;
+  }
+  #about-section-card > * {
+    text-align: center;
+  }
+  #about-section-banner {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 0px;
+    align-items: center;
+    gap: 10px;
+  }
+  #about-section-image {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+}

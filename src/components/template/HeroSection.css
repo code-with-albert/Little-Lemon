@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primary-dark: rgb(73, 94, 87);
+  --primary-yellow: rgb(244, 206, 20);
+  --secondary-orange: rgb(238, 153, 114);
+  --secondary-light-brown: rgb(251, 218, 187);
+  --highlight-white: rgb(237, 239, 238);
+  --highlight-black: rgb(51, 51, 51);
+}
+
+#hero-section-container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+}
+#hero-section-banner {
+  background-color: var(--primary-dark);
+  padding: 0px 250px 0px 250px;
+  height: 325px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+#hero-section-card {
+  width: 350px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  flex-shrink: 0;
+}
+#hero-section-image {
+  margin-top: 50px;
+  height: 350px;
+  width: auto;
+  border-radius: 50px;
+}
+#hero-section-card > * {
+  text-align: start;
+}
+#hero-section-heading {
+  color: var(--primary-yellow);
+  font-family: "Markazi text";
+  font-size: 64px;
+  line-height: 30px;
+}
+
+#hero-section-subheading {
+  color: var(--highlight-white);
+  font-family: "Markazi text";
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#hero-section-description {
+  color: var(--highlight-white);
+  font-family: "khula";
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+#hero-section-button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--highlight-black);
+  background-color: var(--primary-yellow);
+  font-family: "Trebuchet MS";
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: solid 2px var(--highlight-black);
+}
+#hero-section-button:hover {
+  border: solid 2px var(--highlight-white);
+}
+#hero-section-button:active {
+  border: solid 2px var(--highlight-white);
+  background-color: var(--primary-dark);
+  color: var(--primary-yellow);
+}
+@media (max-width: 1000px) {
+  #hero-section-container {
+    height: auto;
+  }
+  #hero-section-banner {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 0px;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  #hero-section-image {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+}
